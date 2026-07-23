@@ -1,38 +1,40 @@
-# create-svelte
+# chienleng.com
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Steven Tan's developer website — a light, engineering-forward companion to the
+design/portfolio site at [steventan.com.au](https://steventan.com.au).
 
-## Creating a project
+Built with **SvelteKit** + **Svelte 5**, styled entirely with
+[`@chienleng/stratum-ui`](https://github.com/chienleng/stratum-ui) (neutral
+theme), written in **TypeScript**, and prerendered to **Cloudflare**. No CSS
+framework, no web fonts — just the library's `--su-*` design tokens and system
+font stacks. See `/colophon` for the full build.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Develop
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm install
+pnpm dev
 ```
 
-## Building
+## Scripts
 
-To create a production version of your app:
+| Command        | Description                                        |
+| -------------- | -------------------------------------------------- |
+| `pnpm dev`     | Start the dev server                               |
+| `pnpm build`   | Build for production (adapter-cloudflare)          |
+| `pnpm preview` | Serve the built worker locally with `wrangler dev` |
+| `pnpm check`   | `wrangler types` + `svelte-check`                  |
+| `pnpm lint`    | Prettier + ESLint                                  |
+| `pnpm format`  | Format with Prettier                               |
+| `pnpm deploy`  | Build and deploy to Cloudflare                     |
 
-```bash
-npm run build
-```
+## Content
 
-You can preview the production build with `npm run preview`.
+Site content lives in typed modules under `src/lib/`:
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- `site.ts` — metadata, links (single source of truth)
+- `projects.ts` — selected work
+- `packages.ts` — open-source packages
+- `stack.ts` — the tooling list
+
+Edit those to update the page — the routes render from them.
