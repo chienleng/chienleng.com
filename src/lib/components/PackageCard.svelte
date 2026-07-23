@@ -35,6 +35,9 @@
 
 	<CardFooter>
 		<div class="footer-row">
+			{#if pkg.demo}
+				<a class="link demo" href={pkg.demo} target="_blank" rel="noopener noreferrer">Demo ↗</a>
+			{/if}
 			<a class="link" href={pkg.npm} target="_blank" rel="noopener noreferrer">npm ↗</a>
 			<a class="link" href={pkg.repo} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 		</div>
@@ -114,5 +117,10 @@
 
 	.link:hover {
 		color: var(--su-accent);
+	}
+
+	.demo {
+		color: var(--su-text);
+		font-weight: var(--su-font-weight-medium);
 	}
 </style>

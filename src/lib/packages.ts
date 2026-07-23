@@ -9,6 +9,8 @@ export interface Package {
 	repo: string;
 	/** npm package URL. */
 	npm: string;
+	/** Live demo / docs URL. */
+	demo?: string;
 	stack: string[];
 	/** Honest provenance note — e.g. a maintained fork/port. */
 	note?: string;
@@ -24,6 +26,7 @@ export const packages: Package[] = [
 		install: 'pnpm add @chienleng/stratum-ui',
 		repo: 'https://github.com/chienleng/stratum-ui',
 		npm: 'https://www.npmjs.com/package/@chienleng/stratum-ui',
+		demo: 'https://stratum-ui.chienleng.com/',
 		stack: ['Svelte 5', 'LayerCake', 'CSS variables'],
 		dogfood: true
 	}
