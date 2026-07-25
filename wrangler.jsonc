@@ -1,6 +1,6 @@
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
-	"name": "chienleng-com",
+	"name": "chienleng",
 	"account_id": "7797b02330b6bcb062ee6cf99d6b48e8",
 	"compatibility_date": "2026-07-23",
 	"compatibility_flags": ["nodejs_als"],
