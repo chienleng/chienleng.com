@@ -4,7 +4,8 @@ export const site = {
 	handle: 'chienleng',
 	url: 'https://chienleng.com',
 	locale: 'en_AU',
-	description: 'Open-source Svelte components, charts and tools by chienleng.',
+	description:
+		'A playground for open-source tools, experiments and data visualisation by chienleng.',
 	ogImage: '/og-image.png',
 	links: {
 		github: 'https://github.com/chienleng',

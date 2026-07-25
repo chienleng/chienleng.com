@@ -1,6 +1,7 @@
 # chienleng.com
 
-Steven Tan's developer website — a light, engineering-forward companion to the
+Steven Tan's developer playground — open-source tools, experiments and data
+visualisation, built in the open. An engineering-forward companion to the
 design/portfolio site at [steventan.com.au](https://steventan.com.au).
 
 Built with **SvelteKit** + **Svelte 5**, styled entirely with

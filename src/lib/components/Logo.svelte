@@ -21,6 +21,8 @@
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
+		top: -0.55em;
 		width: 1.5em;
 		height: 1.5em;
 		font-family:

@@ -21,8 +21,7 @@ export interface Package {
 export const packages: Package[] = [
 	{
 		name: '@chienleng/stratum-ui',
-		tagline:
-			'A Svelte 5 component and charting system with switchable, CSS-variable themes — extracted from the interface behind Open Electricity.',
+		tagline: 'A Svelte 5 component and charting system with switchable, CSS-variable themes.',
 		install: 'pnpm add @chienleng/stratum-ui',
 		repo: 'https://github.com/chienleng/stratum-ui',
 		npm: 'https://www.npmjs.com/package/@chienleng/stratum-ui',

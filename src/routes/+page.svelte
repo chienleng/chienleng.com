@@ -2,23 +2,19 @@
 	import Seo from '$lib/components/Seo.svelte';
 	import SectionHeading from '$lib/components/SectionHeading.svelte';
 	import PackageCard from '$lib/components/PackageCard.svelte';
-	import { site } from '$lib/site';
 	import { packages } from '$lib/packages';
 </script>
 
-<Seo title="chienleng — open-source Svelte tools" />
+<Seo title="chienleng — a playground for tools & data viz" />
 
 <section class="hero container">
-	<p class="eyebrow">Open source · Svelte</p>
-	<h1 class="headline">Small, sharp tools for building things with Svelte.</h1>
-	<p class="intro">
-		Open-source components, charts and utilities — built and maintained by
-		<a href={site.links.github} target="_blank" rel="noopener noreferrer">chienleng</a>.
-	</p>
+	<p class="eyebrow">Playground · Open source · Data viz</p>
+	<h1 class="headline">A playground for ideas, tools and data visualisation.</h1>
+	<p class="intro">Still tinkering...</p>
 </section>
 
 <section class="section container" aria-labelledby="work-heading">
-	<SectionHeading index="01" label="Open source" id="work-heading" />
+	<SectionHeading index="01" label="Tools" id="work-heading" />
 	<div class="feature">
 		{#each packages as pkg (pkg.name)}
 			<PackageCard {pkg} />
@@ -46,19 +42,6 @@
 		font-size: var(--su-font-size-lg);
 		line-height: var(--su-leading-normal);
 		color: var(--su-text-muted);
-	}
-
-	.intro a {
-		color: var(--su-text);
-		font-weight: var(--su-font-weight-medium);
-		text-decoration: underline;
-		text-decoration-color: var(--su-border-strong);
-		text-underline-offset: 3px;
-		transition: text-decoration-color var(--su-duration-fast) var(--su-ease);
-	}
-
-	.intro a:hover {
-		text-decoration-color: var(--su-accent);
 	}
 
 	.feature {
