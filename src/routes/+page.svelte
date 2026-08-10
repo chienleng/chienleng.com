@@ -2,7 +2,9 @@
 	import Seo from '$lib/components/Seo.svelte';
 	import SectionHeading from '$lib/components/SectionHeading.svelte';
 	import PackageCard from '$lib/components/PackageCard.svelte';
+	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import { packages } from '$lib/packages';
+	import { projects } from '$lib/projects';
 </script>
 
 <Seo title="chienleng — a playground for tools & data viz" />
@@ -18,6 +20,15 @@
 	<div class="feature">
 		{#each packages as pkg (pkg.name)}
 			<PackageCard {pkg} />
+		{/each}
+	</div>
+</section>
+
+<section class="section container" aria-labelledby="projects-heading">
+	<SectionHeading index="02" label="Projects" id="projects-heading" />
+	<div class="feature">
+		{#each projects as project (project.name)}
+			<ProjectCard {project} />
 		{/each}
 	</div>
 </section>
