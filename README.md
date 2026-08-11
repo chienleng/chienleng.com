@@ -19,15 +19,15 @@ pnpm dev
 
 ## Scripts
 
-| Command        | Description                                        |
-| -------------- | -------------------------------------------------- |
-| `pnpm dev`     | Start the dev server                               |
-| `pnpm build`   | Build for production (adapter-cloudflare)          |
-| `pnpm preview` | Serve the built worker locally with `wrangler dev` |
-| `pnpm check`   | `wrangler types` + `svelte-check`                  |
-| `pnpm lint`    | Prettier + ESLint                                  |
-| `pnpm format`  | Format with Prettier                               |
-| `pnpm deploy`  | Build and deploy to Cloudflare                     |
+| Command        | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| `pnpm dev`     | Start the dev server → http://chienleng.localhost:7606 |
+| `pnpm build`   | Build for production (adapter-cloudflare)              |
+| `pnpm preview` | Serve the built worker locally with `wrangler dev`     |
+| `pnpm check`   | `wrangler types` + `svelte-check`                      |
+| `pnpm lint`    | Prettier + ESLint                                      |
+| `pnpm format`  | Format with Prettier                                   |
+| `pnpm deploy`  | Build and deploy to Cloudflare                         |
 
 ## Content
 
