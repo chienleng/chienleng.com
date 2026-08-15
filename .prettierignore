@@ -5,3 +5,6 @@ pnpm-lock.yaml
 package-lock.json
 yarn.lock
 worker-configuration.d.ts
+
+# Agent skills
+.agents/skills
