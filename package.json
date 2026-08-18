@@ -20,7 +20,7 @@
 		"gen": "wrangler types"
 	},
 	"dependencies": {
-		"@chienleng/stratum-ui": "^0.4.0"
+		"@chienleng/stratum-ui": "^0.12.2"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
