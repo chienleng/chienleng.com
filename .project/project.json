@@ -1,0 +1,9 @@
+{
+	"schemaVersion": 1,
+	"name": "chienleng.com",
+	"summary": "Developer-facing companion to steventan.com.au and showcase for open-source work.",
+	"lifecycle": "active",
+	"priority": "normal",
+	"owners": ["steventan"],
+	"tags": ["sveltekit", "cloudflare", "portfolio", "stratum-ui"]
+}
