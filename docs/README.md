@@ -1,8 +1,8 @@
 # chienleng.com documentation
 
 Project orientation lives in the root [README](../README.md), with operating
-constraints in [AGENTS.md](../AGENTS.md) and current state in
-[`.project/STATUS.md`](../.project/STATUS.md).
+constraints in [AGENTS.md](../AGENTS.md). Current state and workflow records are
+maintained in Cadence.
 
 ## Agent workflows
 
